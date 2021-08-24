@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #E5E8E8  ;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  align-items: center;
+  text-align: center;
+}
+header {
+  font-size: 2rem;
+}
+header i {
+  padding-left: 3%;
+}
+header h1 {
+  font-family: 'Rampart One', cursive;
+  font-size: 72px;
+  color: black;
+  padding-right: 3%;
+}
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input:focus { 
+  outline: none !important;
+}
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  border-radius: 20px;
+}
+form button {
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.gg{
+  display: flex;
+}
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+.todo-item{
+  height: 55px;
+}
+.todo {
+  background: white;
+  margin: 2px;
+  font-size: 1.5rem;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease;
+  border-radius: 20px;
+  height: 55px;
+}
+.filter-todo {
+  padding: 1rem;
+}
+.todo li {
+  flex: 1;
+}
+.trash-btn,
+.complete-btn {
+  background: black  ;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 20px;
+  margin: 4px;
+}
+.complete-btn {
+  background: #135EFE;
+}
+.todo-item {
+  padding: 0rem 0.5rem;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.fall {
+  transform: translateY(10rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+/*CUSTOM SELECTOR */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-image: none;
+  border-radius: 20px;
+}
+
+/* Custom Select */
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+select {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  width: 12rem;
+  font-size: 15px;
+}
+/* Arrow */
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  background: #135EFE ;
+  cursor: pointer;
+  pointer-events: none;
+}
+.active{
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+@media (max-width: 750px){
+  input{
+    width: 300px;
+  }
+  form button{
+    padding-right: 0px;
+  }
+}
+@media (max-width: 520px){
+  input{
+    width: 270px;
+  }
+}
+@media (max-width: 480px){
+  input{
+    width: 240px;
+  }
+}
